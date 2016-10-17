@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bretsite</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- Nav Bar -->
+<nav class ="navbar navbar-default">
+  <div class = "container-fluid">
+    <div class = "navbar-header">
+      <div class = "row">
+        <div class= "col-md-6">
+          <%= link_to image_tag("bretblogLogo.png"), root_path, class: 'navbar-brand', id: "navbar-logo"%>
+        </div>
+        <div class = "col-md-6" id="navbar-right">
+          <ul class = "nav nav-pills">
+            <li class = "presentation"><%= link_to 'Articles', articles_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<%= yield %>
+
+<!-- Footer -->
+<nav class ="navbar navbar-default footer">
+  <div class = "container-fluid">
+    <div class = "navbar-header">
+      <div class = "row">
+        <div class= "col-md-8">
+          <div class="footer-text">
+            This site was designed by Breton Burnett using:
+          </div>
+          <div class="footer-text">
+            Ruby on Rails 4, HTML5, CSS3, Bootstrap CSS, JavaScript and HighChartsJS
+          </div>
+        </div>
+        <div class = "col-md-4" id="navbar-right">
+          <a href = "https://www.linkedin.com/in/bretonburnett"><%= image_tag("linkedInLogo.png", class: "footerIcon") %></a>
+          <a href = "https://github.com/bburnett86"><%= image_tag("github.ico", class: "footerIcon") %></a>
+          <p class = "footer-text">breton.burnett@gmail.com</li>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>

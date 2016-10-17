@@ -1,0 +1,34 @@
+<div class="row posts-hero-container">
+  <div class="col-md-4 col-md-offset-4 hero-col">
+    <p class ="hero-text">
+      Articles
+    </p>
+  </div>
+</div>
+
+<div class ="row posts-row">
+  <div class = "col-md-6 blog-index-col">
+    <div class = "blog-index-title">
+      Blog
+    </div>
+    <div class = "blog-container">
+      <% @blogs.each do |blog| %>
+      <div class= "row">
+        <%= link_to blog.title, article_path(blog), :id=>"#{blog.id}", :class=>"blog-links index-margin" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class ="col-md-6 project-index-col">
+    <div class = "project-index-title">
+      Projects
+    </div>
+    <div class = "project-container">
+      <% @projects.each do |project| %>
+      <div class= "row">
+        <%= link_to project.title, article_path(project), :id=>"#{project.id}", :class=>"project-links" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

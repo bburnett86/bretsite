@@ -1,0 +1,123 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero-container{
+  height: 60%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero-col{
+  float: none !important;
+  margin: 0 auto !important;
+}
+
+.hero-text{
+  font-size: 30px;
+  font-family: Raleway;
+  text-align: center;
+  color: #81C7DA;
+}
+
+.headshot-container{
+  height: 50%;
+}
+
+.headshot{
+  height: 80%;
+  margin: auto;
+}
+
+.headshot-col{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.skills-col{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center !important;
+}
+
+.about-skills-container{
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.about-me-col{
+  float: none !important;
+  margin: 0 auto !important;
+}
+
+.about-me-text{
+  font-family: Raleway;
+  text-align: center;
+  color: #81C7DA;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.posts-hero-container{
+  height: 20%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.project-index-col{
+  text-align: center;
+}
+
+.blog-index-col{
+  text-align: center;
+}
+
+.project-index-title{
+  font-family: Raleway;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.blog-index-title{
+  font-family: Raleway;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+
+
+.index-margin{
+  margin-bottom: 15px;
+}
+
+.show-side-container{
+  text-align: center;
+}
+
+.content{
+  font-family: Raleway;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+
+#show-image{
+  height: 300px;
+  width: 80%;
+}
+
+.show-image-container{
+  text-align: center;
+}

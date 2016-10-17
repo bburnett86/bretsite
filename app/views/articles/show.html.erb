@@ -1,0 +1,39 @@
+<div class="row posts-hero-container">
+  <div class="col-md-4 col-md-offset-4 hero-col">
+    <p class ="hero-text">
+      <%= @article.title %>
+    </p>
+  </div>
+</div>
+
+<div class="row content-nav-container">
+  <% if @article.pic_url %>
+    <div class = "show-image-container row">
+      <%= image_tag@article.pic_url, :id=>"show-image") %>
+    </div>
+  <% end %>
+  <div class="col-md-10 content-container">
+    <%= simple_format(@article.content, :class=>"content") %>
+    <% if @article.link != nil %>
+      <span class= "content">This website can be viewed live at: </span> <a class= "blog-links" href="<%= @article.link %>"><%= @article.title %></a>
+    <% end %>
+  </div>
+  <div class="col-md-2 show-side-container">
+    <div class = "row project-index-title">
+      Projects
+    </div>
+      <% @projects.each do |project| %>
+        <div class = "row project-links">
+          <%= link_to project.title, article_path(project), :id=>"#{project.id}", :class=>"project-links" %>
+        </div>
+      <% end %>
+    <div class = "row blog-index-title">
+      Blog
+    </div>
+      <% @blogs.each do |blog| %>
+        <div class = "row blog-links">
+          <%= link_to blog.title, article_path(blog), :id=>"#{blog.id}", :class=>"blog-links" %>
+        </div>
+      <% end %>
+  </div>
+</div>

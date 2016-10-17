@@ -1,0 +1,127 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html{
+  height: 100%;
+}
+body {
+  background: #81C7DA !important;
+  background-repeat: no-repeat;
+  height: 100%;
+  }
+
+#navbar-logo{
+  height: 100%;
+}
+
+
+.navbar{
+  margin-top: 3%;
+  background: #C8DBE0 !important;
+  border-color: #C8DBE0 !important;
+  border-radius: 0px !important;
+  margin-bottom: 0;
+}
+
+#navbar-right{
+  position: absolute;
+  right: 0px;
+  width: 298px;
+  padding: 19px 0;;
+  height: 100%;
+  margin: auto;
+}
+
+.nav-toggle{
+  background-color: white;
+  border-color: #ccc !important;
+}
+
+.footer{
+  background: #C8DBE0 !important;
+  border-color: #C8DBE0 !important;
+  border-radius: 0px !important;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.footer-text{
+  font-family: Raleway;
+  color: #81C7DA;
+}
+
+
+.footerIcon{
+  height: 100%;
+}
+
+a.project-links:link {
+    color: #E09BB2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.project-links:visited {
+    color: #E09BB2;
+    font-size: 20px;
+}
+
+a.project-links:hover {
+    color: #8D6137;
+    font-size: 20px;
+}
+
+a.project-links:active {
+    color: #E09BB2;
+    font-size: 20px;
+}
+
+a.blog-links:link {
+    color: #E09BB2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.blog-links:visited {
+    color: #E09BB2;
+    font-size: 20px;
+}
+
+a.blog-links:hover {
+    color: #8D6137;
+    font-size: 20px;
+}
+
+a.blog-links:active {
+    color: #E09BB2;
+    font-size: 20px;
+}
+
+a.log-links:link {
+    color: #89D3E7;
+}
+
+a.log-links:visited {
+    color: #89D3E7;
+}
+
+a.log-links:hover {
+    color: #8D6137;
+}
+
+a.log-links:active {
+    color: #89D3E7;
+}
