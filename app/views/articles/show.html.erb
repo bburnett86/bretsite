@@ -9,7 +9,7 @@
 <div class="row content-nav-container">
   <% if @article.pic_url %>
     <div class = "show-image-container row">
-      <%= image_tag@article.pic_url, :id=>"show-image") %>
+      <%= image_tag(@article.pic_url, :id=>"show-image") %>
     </div>
   <% end %>
   <div class="col-md-10 content-container">
