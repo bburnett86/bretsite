@@ -23,7 +23,7 @@
       Projects
     </div>
       <% @projects.each do |project| %>
-        <div class = "row project-links">
+        <div class = "row link-container">
           <%= link_to project.title, article_path(project), :id=>"#{project.id}", :class=>"project-links" %>
         </div>
       <% end %>
@@ -31,7 +31,7 @@
       Blog
     </div>
       <% @blogs.each do |blog| %>
-        <div class = "row blog-links">
+        <div class = "row link-container">
           <%= link_to blog.title, article_path(blog), :id=>"#{blog.id}", :class=>"blog-links" %>
         </div>
       <% end %>
