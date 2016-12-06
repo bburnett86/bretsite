@@ -68,6 +68,11 @@ body {
   height: 100%;
 }
 
+.link-container{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 a.project-links:link {
     color: #E09BB2;
     font-size: 20px;
