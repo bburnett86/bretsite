@@ -53,7 +53,7 @@ $(document).ready(function(){
               text: 'Programming Languages and Frameworks'
           },
           xAxis: {
-              categories: ['Ruby On Rails', 'HTML5', 'CSS3', 'JavaScript', 'Ruby', 'Sinatra', 'Bootstrap CSS', 'REST', 'RESTful APIs', 'Agile Workflow', 'Wordpress', 'Angular 1x', 'XML', 'ActiveRecord', 'GitHub', 'PostgreSQL'],
+              categories: ['Ruby On Rails', 'HTML5', 'CSS3', 'JavaScript', 'Ruby', 'Sinatra', 'Bootstrap CSS', 'REST', 'RESTful APIs', 'Agile Workflow', 'Wordpress', 'React', 'XML', 'ActiveRecord', 'GitHub', 'PostgreSQL'],
               title: {
                   text: null
               }
